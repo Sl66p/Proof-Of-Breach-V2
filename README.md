@@ -1,4 +1,3 @@
-<head>
 <h1>
 Proof Of Breach V2 for the O.MG plug
 </h1>
