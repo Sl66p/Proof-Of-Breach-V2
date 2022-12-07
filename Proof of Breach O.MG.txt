@@ -32,9 +32,7 @@ REM Devices: Optimised for O.MG Plug, with tweaks could be ran on most HID devic
 
 REM Creator: Sleep. (u/sl66pbtw on reddit, Sl66p on github.)
 
-REM Purpose of script: Provides a text box that shows logged in user's username and time saying the user has been breached,
-REM the script then takes a screenshot and emails it to a designated target.
-
+REM Purpose of script: Provides a text box that shows logged in user's username and time
 
 REM Disclaimer! I AM NOT LIABLE IN ANY FORM FOR HARM DONE TO A SYSTEM (even though this script is virtually harmless) Disclaimer!
 
