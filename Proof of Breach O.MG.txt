@@ -26,7 +26,7 @@ REM                   'cdOKXXXX0kd:.
 ⠀⠀⠀⠀⠀⠀⠀⠀
 REM Proof of entry 2.0, wireless, and multiple methods.
 
-REM Version 0.1 (THIS IS AN UNRELEASED VERSION OF PoBV2, USE WITH CAUTION!)
+REM Version 0.2 (THIS IS AN UNRELEASED VERSION OF PoBV2, USE WITH CAUTION!)
 
 REM Devices: Optimised for O.MG Plug, with tweaks could be ran on most HID devices as a payload.
 
