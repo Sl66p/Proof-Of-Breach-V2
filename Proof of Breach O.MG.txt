@@ -30,7 +30,9 @@ REM Version 0.3 (THIS IS AN UNRELEASED VERSION OF PoBV2, USE WITH CAUTION!)
 
 REM Devices: Optimised for O.MG Plug, with tweaks could be ran on most HID devices as a payload.
 
-REM Creator: Sleep. (u/sl66pbtwEM Purpose of script: Provides a text box that shows logged in user's username and time
+REM Creator: Sleep. (u/sl66pbtw)
+
+REM Purpose of script: Provides a text box that shows logged in user's username and time
 
 REM Disclaimer! I AM NOT LIABLE IN ANY FORM FOR HARM DONE TO A SYSTEM (even though this script is virtually harmless) Disclaimer!
 
